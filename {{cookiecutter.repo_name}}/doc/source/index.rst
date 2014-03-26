@@ -20,6 +20,7 @@
    :maxdepth: 2
    readme <readme>
    contributing <contributing>
+   Sample Template <template.rst>
 
 
 Indices and tables
