@@ -18,9 +18,10 @@
 
 .. toctree::
    :maxdepth: 2
-   readme <readme>
-   contributing <contributing>
-   Sample Template <template.rst>
+
+   README <readme>
+   contributing
+   Sample Template <template>
 
 
 Indices and tables

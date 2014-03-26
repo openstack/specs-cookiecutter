@@ -1,1 +1,1 @@
-.. include:: ../template.rst
+../../template.rst

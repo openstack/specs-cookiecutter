@@ -1,3 +1,7 @@
+=============================================
+Contributing to: {{ cookiecutter.repo_name }}
+=============================================
+
 If you would like to contribute to the development of OpenStack,
 you must follow the steps in the "If you're a developer, start here"
 section of this page:
