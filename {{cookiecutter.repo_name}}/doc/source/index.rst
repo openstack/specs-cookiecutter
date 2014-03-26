@@ -3,18 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to {{ cookiecutter.repo_name }}'s documentation!
-========================================================
-
-Contents:
+{{ cookiecutter.repo_name }} Design Specifications
+==================================================
 
 .. toctree::
    :glob:
    :maxdepth: 2
 
-   readme
-   contributing
    ../../specs/*
+
+
+{{ cookiecutter.repo_name }} Repository Information
+===================================================
+
+.. toctree::
+   :maxdepth: 2
+   readme <readme>
+   contributing <contributing>
+
 
 Indices and tables
 ==================
