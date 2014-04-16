@@ -26,6 +26,14 @@ extensions = [
     'oslosphinx'
 ]
 
+# Optionally allow the use of sphinxcontrib.spelling to verify the
+# spelling of the documents.
+try:
+    import sphinxcontrib.spelling
+    extensions.append('sphinxcontrib.spelling')
+except ImportError:
+    pass
+
 # autodoc generation is a bit aggressive and a nuisance when doing heavy
 # text edit cycles.
 # execute "export SPHINX_DEBUG=1" in your terminal to disable
