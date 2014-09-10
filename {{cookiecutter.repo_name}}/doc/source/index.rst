@@ -21,7 +21,6 @@
 
    README <readme>
    contributing
-   Sample Template <template>
 
 
 Indices and tables
