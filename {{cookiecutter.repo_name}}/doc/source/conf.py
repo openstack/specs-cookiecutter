@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import datetime
 import os
 import sys
 
@@ -23,7 +24,16 @@ sys.path.insert(0, os.path.abspath('../..'))
 extensions = [
     'sphinx.ext.autodoc',
     #'sphinx.ext.intersphinx',
-    'oslosphinx'
+    'oslosphinx',
+    'yasfb',
+]
+
+# Feed configuration for yasfb
+feed_base_url = 'http://specs.openstack.org/openstack/{{cookiecutter.repo_name}}'
+feed_author = 'OpenStack Development Team'
+
+exclude_patterns = [
+    'template.rst',
 ]
 
 # Optionally allow the use of sphinxcontrib.spelling to verify the
@@ -46,7 +56,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'{{cookiecutter.repo_name}}'
-copyright = u'2013, OpenStack Foundation'
+copyright = u'%s, OpenStack Foundation' % datetime.date.today().year
 
 # If true, '()' will be appended to :func: etc. cross-reference text.
 add_function_parentheses = True
