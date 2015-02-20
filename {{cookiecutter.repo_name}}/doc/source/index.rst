@@ -10,7 +10,7 @@
    :glob:
    :maxdepth: 2
 
-   ../../specs/*
+   specs/*
 
 
 {{ cookiecutter.repo_name }} Repository Information
