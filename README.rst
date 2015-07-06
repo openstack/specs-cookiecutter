@@ -31,6 +31,6 @@ Then:
 
 
 .. _pbr: http://docs.openstack.org/developer/pbr
-.. _OpenStack-Infra: http://ci.openstack.org
+.. _OpenStack-Infra: http://docs.openstack.org/infra/system-config
 .. _Tox: http://testrun.org/tox/
 .. _Sphinx: http://sphinx-doc.org/
