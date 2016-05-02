@@ -18,7 +18,7 @@ http://creativecommons.org/licenses/by/3.0/legalcode
 
 Include the URL of your launchpad blueprint:
 
-https://blueprints.launchpad.net/{{ cookiecutter.projcet_name }}/+spec/example
+https://blueprints.launchpad.net/{{ cookiecutter.project_name }}/+spec/example
 
 Introduction paragraph -- why are we doing anything?
 
