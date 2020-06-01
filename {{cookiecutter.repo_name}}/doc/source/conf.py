@@ -24,12 +24,12 @@ sys.path.insert(0, os.path.abspath('../..'))
 extensions = [
     'sphinx.ext.autodoc',
     #'sphinx.ext.intersphinx',
-    'oslosphinx',
+    'openstackdocstheme',
     'yasfb',
 ]
 
 # Feed configuration for yasfb
-feed_base_url = 'http://specs.openstack.org/openstack/{{cookiecutter.repo_name}}'
+feed_base_url = 'https://specs.openstack.org/openstack/{{cookiecutter.repo_name}}'
 feed_author = 'OpenStack Development Team'
 
 exclude_patterns = [
@@ -58,6 +58,11 @@ master_doc = 'index'
 project = u'{{cookiecutter.repo_name}}'
 copyright = u'%s, OpenStack Foundation' % datetime.date.today().year
 
+# openstackdocstheme options
+openstackdocs_repo_name = '{{cookiecutter.repo_group}}/{{cookiecutter.repo_name}}'
+openstackdocs_bug_project = '{{cookiecutter.bug_project}}'
+openstackdocs_bug_tag = ''
+
 # If true, '()' will be appended to :func: etc. cross-reference text.
 add_function_parentheses = True
 
@@ -66,7 +71,7 @@ add_function_parentheses = True
 add_module_names = True
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'native'
 
 # -- Options for HTML output --------------------------------------------------
 
@@ -75,6 +80,7 @@ pygments_style = 'sphinx'
 # html_theme_path = ["."]
 # html_theme = '_theme'
 # html_static_path = ['static']
+html_theme = 'openstackdocs'
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = '%sdoc' % project
